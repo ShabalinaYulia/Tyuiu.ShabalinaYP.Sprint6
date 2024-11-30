@@ -218,6 +218,8 @@
             Controls.Add(groupBoxInPutVarStep);
             Controls.Add(groupBoxTask_SYP);
             Controls.Add(groupBoxOutPutResult_SYP);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 2 | Вариант 17 | Шабалина Ю.П.";
