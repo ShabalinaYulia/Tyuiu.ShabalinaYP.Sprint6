@@ -1,4 +1,4 @@
-﻿namespace Tyuiu.ShabalinaYP.Sprint6.Task1.V25
+﻿namespace Tyuiu.ShabalinaYP.Sprint6.Task2.V17
 {
     partial class FormMain
     {
@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             groupBoxTask_SYP = new GroupBox();
-            pictureBoxFunction_SYP = new PictureBox();
+            pictureBox1 = new PictureBox();
             labelTask_SYP = new Label();
             groupBoxInPutVarStep = new GroupBox();
             labelStopStep_SYP = new Label();
@@ -39,41 +42,45 @@
             textBoxInPutStopStep_SYP = new TextBox();
             buttonDoHelp_SYP = new Button();
             buttonDoResult_SYP = new Button();
-            groupBoxResult_SYP = new GroupBox();
-            labelOutPutResult_SYP = new Label();
-            textBoxShowResult_SYP = new TextBox();
+            dataGridViewFunction_SYP = new DataGridView();
+            X = new DataGridViewTextBoxColumn();
+            Function = new DataGridViewTextBoxColumn();
+            groupBoxOutPutResult_SYP = new GroupBox();
+            chartFunction_SYP = new System.Windows.Forms.DataVisualization.Charting.Chart();
             groupBoxTask_SYP.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxFunction_SYP).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBoxInPutVarStep.SuspendLayout();
-            groupBoxResult_SYP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewFunction_SYP).BeginInit();
+            groupBoxOutPutResult_SYP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)chartFunction_SYP).BeginInit();
             SuspendLayout();
             // 
             // groupBoxTask_SYP
             // 
-            groupBoxTask_SYP.Controls.Add(pictureBoxFunction_SYP);
+            groupBoxTask_SYP.Controls.Add(pictureBox1);
             groupBoxTask_SYP.Controls.Add(labelTask_SYP);
-            groupBoxTask_SYP.Location = new Point(21, 23);
+            groupBoxTask_SYP.Location = new Point(12, 12);
             groupBoxTask_SYP.Name = "groupBoxTask_SYP";
-            groupBoxTask_SYP.Size = new Size(468, 211);
-            groupBoxTask_SYP.TabIndex = 0;
+            groupBoxTask_SYP.Size = new Size(464, 277);
+            groupBoxTask_SYP.TabIndex = 1;
             groupBoxTask_SYP.TabStop = false;
             groupBoxTask_SYP.Text = " Условие";
             // 
-            // pictureBoxFunction_SYP
+            // pictureBox1
             // 
-            pictureBoxFunction_SYP.Image = (Image)resources.GetObject("pictureBoxFunction_SYP.Image");
-            pictureBoxFunction_SYP.Location = new Point(6, 41);
-            pictureBoxFunction_SYP.Name = "pictureBoxFunction_SYP";
-            pictureBoxFunction_SYP.Size = new Size(237, 39);
-            pictureBoxFunction_SYP.TabIndex = 1;
-            pictureBoxFunction_SYP.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(6, 37);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(334, 38);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // labelTask_SYP
             // 
             labelTask_SYP.AutoSize = true;
             labelTask_SYP.Location = new Point(6, 19);
             labelTask_SYP.Name = "labelTask_SYP";
-            labelTask_SYP.Size = new Size(382, 105);
+            labelTask_SYP.Size = new Size(382, 150);
             labelTask_SYP.TabIndex = 0;
             labelTask_SYP.Text = resources.GetString("labelTask_SYP.Text");
             // 
@@ -83,10 +90,10 @@
             groupBoxInPutVarStep.Controls.Add(labelStartEnd_SYP);
             groupBoxInPutVarStep.Controls.Add(textBoxInPutStartStep_SYP);
             groupBoxInPutVarStep.Controls.Add(textBoxInPutStopStep_SYP);
-            groupBoxInPutVarStep.Location = new Point(21, 240);
+            groupBoxInPutVarStep.Location = new Point(12, 295);
             groupBoxInPutVarStep.Name = "groupBoxInPutVarStep";
             groupBoxInPutVarStep.Size = new Size(243, 64);
-            groupBoxInPutVarStep.TabIndex = 1;
+            groupBoxInPutVarStep.TabIndex = 2;
             groupBoxInPutVarStep.TabStop = false;
             groupBoxInPutVarStep.Text = "Ввод данных";
             // 
@@ -127,10 +134,10 @@
             // buttonDoHelp_SYP
             // 
             buttonDoHelp_SYP.BackColor = Color.DodgerBlue;
-            buttonDoHelp_SYP.Location = new Point(270, 247);
+            buttonDoHelp_SYP.Location = new Point(261, 302);
             buttonDoHelp_SYP.Name = "buttonDoHelp_SYP";
             buttonDoHelp_SYP.Size = new Size(95, 57);
-            buttonDoHelp_SYP.TabIndex = 2;
+            buttonDoHelp_SYP.TabIndex = 3;
             buttonDoHelp_SYP.Text = "Справка";
             buttonDoHelp_SYP.UseVisualStyleBackColor = false;
             buttonDoHelp_SYP.Click += buttonHelp_Click;
@@ -138,68 +145,90 @@
             // buttonDoResult_SYP
             // 
             buttonDoResult_SYP.BackColor = Color.Green;
-            buttonDoResult_SYP.Location = new Point(371, 247);
+            buttonDoResult_SYP.Location = new Point(358, 302);
             buttonDoResult_SYP.Name = "buttonDoResult_SYP";
             buttonDoResult_SYP.Size = new Size(118, 57);
-            buttonDoResult_SYP.TabIndex = 3;
+            buttonDoResult_SYP.TabIndex = 4;
             buttonDoResult_SYP.Text = "Выполнить";
             buttonDoResult_SYP.UseVisualStyleBackColor = false;
             buttonDoResult_SYP.Click += buttonDone_Click;
+            buttonDoResult_SYP.MouseDown += buttonDone_MouseDown;
+            buttonDoResult_SYP.MouseEnter += buttonDone_MouseEnter;
+            buttonDoResult_SYP.MouseLeave += buttonDone_MouseLeave;
             // 
-            // groupBoxResult_SYP
+            // dataGridViewFunction_SYP
             // 
-            groupBoxResult_SYP.Controls.Add(labelOutPutResult_SYP);
-            groupBoxResult_SYP.Controls.Add(textBoxShowResult_SYP);
-            groupBoxResult_SYP.Location = new Point(506, 23);
-            groupBoxResult_SYP.Name = "groupBoxResult_SYP";
-            groupBoxResult_SYP.Size = new Size(200, 281);
-            groupBoxResult_SYP.TabIndex = 4;
-            groupBoxResult_SYP.TabStop = false;
-            groupBoxResult_SYP.Text = "Вывод данных";
+            dataGridViewFunction_SYP.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewFunction_SYP.Columns.AddRange(new DataGridViewColumn[] { X, Function });
+            dataGridViewFunction_SYP.Location = new Point(21, 37);
+            dataGridViewFunction_SYP.Name = "dataGridViewFunction_SYP";
+            dataGridViewFunction_SYP.RowHeadersVisible = false;
+            dataGridViewFunction_SYP.Size = new Size(121, 240);
+            dataGridViewFunction_SYP.TabIndex = 5;
             // 
-            // labelOutPutResult_SYP
+            // X
             // 
-            labelOutPutResult_SYP.AutoSize = true;
-            labelOutPutResult_SYP.Location = new Point(6, 19);
-            labelOutPutResult_SYP.Name = "labelOutPutResult_SYP";
-            labelOutPutResult_SYP.Size = new Size(63, 15);
-            labelOutPutResult_SYP.TabIndex = 1;
-            labelOutPutResult_SYP.Text = "Результат:";
+            X.HeaderText = "X";
+            X.Name = "X";
+            X.ReadOnly = true;
+            X.Width = 50;
             // 
-            // textBoxShowResult_SYP
+            // Function
             // 
-            textBoxShowResult_SYP.Cursor = Cursors.IBeam;
-            textBoxShowResult_SYP.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxShowResult_SYP.Location = new Point(0, 37);
-            textBoxShowResult_SYP.Multiline = true;
-            textBoxShowResult_SYP.Name = "textBoxShowResult_SYP";
-            textBoxShowResult_SYP.ReadOnly = true;
-            textBoxShowResult_SYP.ScrollBars = ScrollBars.Vertical;
-            textBoxShowResult_SYP.Size = new Size(200, 244);
-            textBoxShowResult_SYP.TabIndex = 0;
+            Function.HeaderText = "F(X)";
+            Function.Name = "Function";
+            Function.Width = 50;
+            // 
+            // groupBoxOutPutResult_SYP
+            // 
+            groupBoxOutPutResult_SYP.Controls.Add(chartFunction_SYP);
+            groupBoxOutPutResult_SYP.Controls.Add(dataGridViewFunction_SYP);
+            groupBoxOutPutResult_SYP.Location = new Point(482, 12);
+            groupBoxOutPutResult_SYP.Name = "groupBoxOutPutResult_SYP";
+            groupBoxOutPutResult_SYP.Size = new Size(698, 347);
+            groupBoxOutPutResult_SYP.TabIndex = 6;
+            groupBoxOutPutResult_SYP.TabStop = false;
+            groupBoxOutPutResult_SYP.Text = "Вывод данных";
+            // 
+            // chartFunction_SYP
+            // 
+            chartArea1.Name = "ChartArea1";
+            chartFunction_SYP.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chartFunction_SYP.Legends.Add(legend1);
+            chartFunction_SYP.Location = new Point(216, 22);
+            chartFunction_SYP.Name = "chartFunction_SYP";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chartFunction_SYP.Series.Add(series1);
+            chartFunction_SYP.Size = new Size(461, 300);
+            chartFunction_SYP.TabIndex = 6;
+            chartFunction_SYP.Text = "График функции";
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(720, 316);
-            Controls.Add(groupBoxResult_SYP);
+            ClientSize = new Size(1188, 366);
             Controls.Add(buttonDoResult_SYP);
             Controls.Add(buttonDoHelp_SYP);
             Controls.Add(groupBoxInPutVarStep);
             Controls.Add(groupBoxTask_SYP);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            MaximizeBox = false;
+            Controls.Add(groupBoxOutPutResult_SYP);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 1 | Вариант 25 | Шабалина Ю.П.";
+            Text = "Спринт 6 | Таск 2 | Вариант 17 | Шабалина Ю.П.";
             groupBoxTask_SYP.ResumeLayout(false);
             groupBoxTask_SYP.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxFunction_SYP).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBoxInPutVarStep.ResumeLayout(false);
             groupBoxInPutVarStep.PerformLayout();
-            groupBoxResult_SYP.ResumeLayout(false);
-            groupBoxResult_SYP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewFunction_SYP).EndInit();
+            groupBoxOutPutResult_SYP.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)chartFunction_SYP).EndInit();
             ResumeLayout(false);
         }
 
@@ -207,16 +236,18 @@
 
         private GroupBox groupBoxTask_SYP;
         private Label labelTask_SYP;
-        private PictureBox pictureBoxFunction_SYP;
+        private PictureBox pictureBox1;
         private GroupBox groupBoxInPutVarStep;
+        private Label labelStopStep_SYP;
+        private Label labelStartEnd_SYP;
         private TextBox textBoxInPutStartStep_SYP;
         private TextBox textBoxInPutStopStep_SYP;
-        private Label labelStartEnd_SYP;
-        private Label labelStopStep_SYP;
         private Button buttonDoHelp_SYP;
         private Button buttonDoResult_SYP;
-        private GroupBox groupBoxResult_SYP;
-        private Label labelOutPutResult_SYP;
-        private TextBox textBoxShowResult_SYP;
+        private DataGridView dataGridViewFunction_SYP;
+        private GroupBox groupBoxOutPutResult_SYP;
+        private DataGridViewTextBoxColumn X;
+        private DataGridViewTextBoxColumn Function;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction_SYP;
     }
 }
