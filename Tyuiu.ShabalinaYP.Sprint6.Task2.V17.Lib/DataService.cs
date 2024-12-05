@@ -7,7 +7,7 @@ namespace Tyuiu.ShabalinaYP.Sprint6.Task2.V17.Lib
         {
             double[] values = new double[stopValue - startValue + 1];
             int index = 0;
-            for (int i = startValue; i <= stopValue; i++)
+            for (int i = startValue; i < stopValue; i++)
             {
                 values[index++] = Math.Round(Math.Cos(i) + (4 * i) / 2 - Math.Sin(i) * 3 * i, 2);
             }
