@@ -189,7 +189,7 @@
             // 
             // buttonToSaveFile_SYP
             // 
-            buttonToSaveFile_SYP.BackColor = Color.RoyalBlue;
+            buttonToSaveFile_SYP.BackColor = Color.SteelBlue;
             buttonToSaveFile_SYP.Location = new Point(611, 31);
             buttonToSaveFile_SYP.Name = "buttonToSaveFile_SYP";
             buttonToSaveFile_SYP.Size = new Size(74, 40);
