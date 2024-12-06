@@ -263,6 +263,15 @@
         private TextBox textBoxShowResult_SYP;
         private Button buttonDoHelp_SYP;
         private Button buttonToSaveFile_SYP;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction_SYP;
+        private Splitter splitterSplineandOutPut_SYP;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartFunctionSpline_SYP;        
+        private GroupBox groupBoxTask_SYP;
+        private PictureBox pictureBoxofFormula_SYP;
+        private TextBox textBoxTask_SYP;
+        private Panel panelInPutTask_SYP;
+        private Panel panelForOutPutData_SYP;
+        private Panel panelForFunction_SYP;
+
+
     }
 }
