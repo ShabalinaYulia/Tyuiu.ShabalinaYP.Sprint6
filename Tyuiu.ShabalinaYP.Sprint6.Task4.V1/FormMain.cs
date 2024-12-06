@@ -18,8 +18,8 @@ namespace Tyuiu.ShabalinaYP.Sprint6.Task4.V1
                 double[] valueArray;
                 valueArray = new double[len];
                 valueArray = ds.GetMassFunction(startStep, stopStep);
-                this.chartFunction_SYP.ChartAreas[0].AxisX.Title = "Îñü X";
-                this.chartFunction_SYP.ChartAreas[0].AxisY.Title = "Îñü Y";
+                this.chartFunctionSpline_SYP.ChartAreas[0].AxisX.Title = "Îñü X";
+                this.chartFunctionSpline_SYP.ChartAreas[0].AxisY.Title = "Îñü Y";
                 textBoxShowResult_SYP.Text = "";
 
                 chartFunctionSpline_SYP.Series[0].Points.Clear();
