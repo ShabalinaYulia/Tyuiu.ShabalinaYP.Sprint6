@@ -73,39 +73,6 @@
             buttonDoResult_SYP.UseVisualStyleBackColor = false;
             buttonDoResult_SYP.Click += buttonDone_Click;
             // 
-            // groupBoxTask_SYP
-            // 
-            groupBoxTask_SYP.Controls.Add(pictureBoxofFormula_SYP);
-            groupBoxTask_SYP.Controls.Add(textBoxTask_SYP);
-            groupBoxTask_SYP.Location = new Point(12, 12);
-            groupBoxTask_SYP.Name = "groupBoxTask_SYP";
-            groupBoxTask_SYP.Size = new Size(338, 100);
-            groupBoxTask_SYP.TabIndex = 6;
-            groupBoxTask_SYP.TabStop = false;
-            groupBoxTask_SYP.Text = "Условие";
-            // 
-            // pictureBoxofFormula_SYP
-            // 
-            pictureBoxofFormula_SYP.Image = (Image)resources.GetObject("pictureBoxofFormula_SYP.Image");
-            pictureBoxofFormula_SYP.Location = new Point(6, 60);
-            pictureBoxofFormula_SYP.Name = "pictureBoxofFormula_SYP";
-            pictureBoxofFormula_SYP.Size = new Size(245, 28);
-            pictureBoxofFormula_SYP.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxofFormula_SYP.TabIndex = 1;
-            pictureBoxofFormula_SYP.TabStop = false;
-            // 
-            // textBoxTask_SYP
-            // 
-            textBoxTask_SYP.BackColor = SystemColors.Control;
-            textBoxTask_SYP.BorderStyle = BorderStyle.None;
-            textBoxTask_SYP.Location = new Point(0, 22);
-            textBoxTask_SYP.Multiline = true;
-            textBoxTask_SYP.Name = "textBoxTask_SYP";
-            textBoxTask_SYP.ReadOnly = true;
-            textBoxTask_SYP.Size = new Size(326, 78);
-            textBoxTask_SYP.TabIndex = 1;
-            textBoxTask_SYP.Text = "Написать программу, которая выводит таблицу значений функции: f(x) на диапазоне [-5; 5].";
-            // 
             // groupBoxInPutVarStep
             // 
             groupBoxInPutVarStep.Controls.Add(labelStopStep_SYP);
@@ -199,7 +166,7 @@
             // buttonToSaveFile_SYP
             // 
             buttonToSaveFile_SYP.BackColor = Color.SteelBlue;
-            buttonToSaveFile_SYP.Location = new Point(611, 31);
+            buttonToSaveFile_SYP.Location = new Point(614, 21);
             buttonToSaveFile_SYP.Name = "buttonToSaveFile_SYP";
             buttonToSaveFile_SYP.Size = new Size(74, 40);
             buttonToSaveFile_SYP.TabIndex = 10;

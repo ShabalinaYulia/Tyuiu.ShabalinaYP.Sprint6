@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.ShabalinaYP.Sprint6.Task5.V29
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         ///  Required designer variable.
