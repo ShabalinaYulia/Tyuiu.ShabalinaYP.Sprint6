@@ -22,11 +22,11 @@ namespace Tyuiu.ShabalinaYP.Sprint6.Task4.V1
                 this.chartFunction_SYP.ChartAreas[0].AxisY.Title = "Îñü Y";
                 textBoxShowResult_SYP.Text = "";
 
-                chartFunction_SYP.Series[0].Points.Clear();
+                chartFunctionSpline_SYP.Series[0].Points.Clear();
                 
                 for (int i = 0; i < len; i++)
                 {
-                    this.chartFunction_SYP.Series[0].Points.AddXY(startStep, valueArray[i]);
+                    this.chartFunctionSpline_SYP.Series[0].Points.AddXY(startStep, valueArray[i]);
                     textBoxShowResult_SYP.AppendText(valueArray[i] + Environment.NewLine);
                     startStep++;
                 }
