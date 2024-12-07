@@ -133,7 +133,7 @@
             // labelOutPutResult_SYP
             // 
             labelOutPutResult_SYP.AutoSize = true;
-            labelOutPutResult_SYP.Location = new Point(6, 19);
+            labelOutPutResult_SYP.Location = new Point(6, 22);
             labelOutPutResult_SYP.Name = "labelOutPutResult_SYP";
             labelOutPutResult_SYP.Size = new Size(63, 15);
             labelOutPutResult_SYP.TabIndex = 1;
