@@ -16,8 +16,8 @@ namespace Tyuiu.ShabalinaYP.Sprint6.Task5.V29
             dataGridViewRes_SYP.Columns[0].Width = 20;
             dataGridViewRes_SYP.Columns[1].Width = 50;
 
-            this.chartDiagRes_SYP.ChartAreas[0].AxisX.Title = "РћСЃСЊ X";
-            this.chartDiagRes_SYP.ChartAreas[0].AxisY.Title = "РћСЃСЊ Y";
+            this.chartDiagRes_SYP.ChartAreas[0].AxisX.Title = "Ось X";
+            this.chartDiagRes_SYP.ChartAreas[0].AxisY.Title = "Ось Y";
 
             chartDiagRes_SYP.Series[0].Points.Clear();
 
@@ -33,7 +33,7 @@ namespace Tyuiu.ShabalinaYP.Sprint6.Task5.V29
         }
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("РўР°СЃРє 4 РІС‹РїРѕР»РЅРёР» СЃС‚СѓРґРµРЅС‚ РџРљРўР±-24-1 РЁР°Р±Р°Р»РёРЅР° Р®Р»РёСЏ РџР°РІР»РѕРІРЅР°", "РЎРѕРѕР±С‰РµРЅРёРµ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 4 выполнил студент ПКТб-24-1 Шабалина Юлия Павловна", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void buttonOpenFile_Click(object sender, EventArgs e)
