@@ -9,7 +9,7 @@ namespace Tyuiu.ShabalinaYP.Sprint6.Task5.V29.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                while ((line = reader.ReadLine()) != null)
+                while ((line = reader.ReadLine()!) != null)
                 {
                     len++;
                 }
@@ -20,7 +20,7 @@ namespace Tyuiu.ShabalinaYP.Sprint6.Task5.V29.Lib
             using (StreamReader reader2 = new StreamReader(path))
             {
                 string line;
-                while ((line = reader2.ReadLine()) != null)
+                while ((line = reader2.ReadLine()!) != null)
                 {
                     numsArray[index] = Convert.ToDouble(line);
                     index++;
