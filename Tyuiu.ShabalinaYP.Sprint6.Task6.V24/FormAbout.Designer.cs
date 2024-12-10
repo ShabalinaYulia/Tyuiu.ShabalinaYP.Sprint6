@@ -58,6 +58,7 @@
             // textBoxAbout_SYP
             // 
             textBoxAbout_SYP.BackColor = SystemColors.ButtonFace;
+            textBoxAbout_SYP.BorderStyle = BorderStyle.FixedSingle;
             textBoxAbout_SYP.Location = new Point(220, 27);
             textBoxAbout_SYP.Multiline = true;
             textBoxAbout_SYP.Name = "textBoxAbout_SYP";

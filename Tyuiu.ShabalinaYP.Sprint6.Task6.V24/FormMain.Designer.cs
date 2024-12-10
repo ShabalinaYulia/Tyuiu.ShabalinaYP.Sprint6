@@ -84,9 +84,12 @@
             buttonDone_SYP.BackgroundImage = (Image)resources.GetObject("buttonDone_SYP.BackgroundImage");
             buttonDone_SYP.BackgroundImageLayout = ImageLayout.Stretch;
             buttonDone_SYP.Enabled = false;
-            buttonDone_SYP.Location = new Point(111, 7);
+            buttonDone_SYP.FlatAppearance.BorderColor = Color.Silver;
+            buttonDone_SYP.FlatAppearance.MouseDownBackColor = Color.Silver;
+            buttonDone_SYP.FlatStyle = FlatStyle.Flat;
+            buttonDone_SYP.Location = new Point(96, 7);
             buttonDone_SYP.Name = "buttonDone_SYP";
-            buttonDone_SYP.Size = new Size(78, 75);
+            buttonDone_SYP.Size = new Size(59, 62);
             buttonDone_SYP.TabIndex = 3;
             toolTip.SetToolTip(buttonDone_SYP, "Выводит первое слово каждой строки в результирующею строку и выводит \r\n ее в textBoxOut.");
             buttonDone_SYP.UseVisualStyleBackColor = false;
@@ -98,7 +101,7 @@
             buttonOpenFile_SYP.BackgroundImage = (Image)resources.GetObject("buttonOpenFile_SYP.BackgroundImage");
             buttonOpenFile_SYP.Location = new Point(12, 7);
             buttonOpenFile_SYP.Name = "buttonOpenFile_SYP";
-            buttonOpenFile_SYP.Size = new Size(79, 62);
+            buttonOpenFile_SYP.Size = new Size(78, 62);
             buttonOpenFile_SYP.TabIndex = 2;
             toolTip.SetToolTip(buttonOpenFile_SYP, "Открыть файл\r\nВыберите нужный файл для обработки");
             buttonOpenFile_SYP.UseVisualStyleBackColor = false;
