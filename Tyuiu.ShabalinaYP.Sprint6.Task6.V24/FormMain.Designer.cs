@@ -68,11 +68,12 @@
             // buttonHelp_SYP
             // 
             buttonHelp_SYP.BackColor = SystemColors.ButtonFace;
-            buttonHelp_SYP.BackgroundImage = (Image)resources.GetObject("buttonHelp_SYP.BackgroundImage");
             buttonHelp_SYP.Dock = DockStyle.Right;
-            buttonHelp_SYP.Location = new Point(823, 0);
+            buttonHelp_SYP.FlatAppearance.BorderColor = Color.Silver;
+            buttonHelp_SYP.Image = (Image)resources.GetObject("buttonHelp_SYP.Image");
+            buttonHelp_SYP.Location = new Point(841, 0);
             buttonHelp_SYP.Name = "buttonHelp_SYP";
-            buttonHelp_SYP.Size = new Size(83, 78);
+            buttonHelp_SYP.Size = new Size(65, 78);
             buttonHelp_SYP.TabIndex = 4;
             toolTip.SetToolTip(buttonHelp_SYP, "Открыть справку\r\n");
             buttonHelp_SYP.UseVisualStyleBackColor = false;
@@ -81,12 +82,12 @@
             // buttonDone_SYP
             // 
             buttonDone_SYP.BackColor = SystemColors.ButtonFace;
-            buttonDone_SYP.BackgroundImage = (Image)resources.GetObject("buttonDone_SYP.BackgroundImage");
             buttonDone_SYP.BackgroundImageLayout = ImageLayout.Stretch;
             buttonDone_SYP.Enabled = false;
             buttonDone_SYP.FlatAppearance.BorderColor = Color.Silver;
             buttonDone_SYP.FlatAppearance.MouseDownBackColor = Color.Silver;
             buttonDone_SYP.FlatStyle = FlatStyle.Flat;
+            buttonDone_SYP.Image = (Image)resources.GetObject("buttonDone_SYP.Image");
             buttonDone_SYP.Location = new Point(96, 7);
             buttonDone_SYP.Name = "buttonDone_SYP";
             buttonDone_SYP.Size = new Size(59, 62);
@@ -98,10 +99,12 @@
             // buttonOpenFile_SYP
             // 
             buttonOpenFile_SYP.BackColor = SystemColors.ButtonFace;
-            buttonOpenFile_SYP.BackgroundImage = (Image)resources.GetObject("buttonOpenFile_SYP.BackgroundImage");
+            buttonOpenFile_SYP.FlatAppearance.BorderColor = Color.Silver;
+            buttonOpenFile_SYP.FlatStyle = FlatStyle.Flat;
+            buttonOpenFile_SYP.Image = (Image)resources.GetObject("buttonOpenFile_SYP.Image");
             buttonOpenFile_SYP.Location = new Point(12, 7);
             buttonOpenFile_SYP.Name = "buttonOpenFile_SYP";
-            buttonOpenFile_SYP.Size = new Size(78, 62);
+            buttonOpenFile_SYP.Size = new Size(63, 62);
             buttonOpenFile_SYP.TabIndex = 2;
             toolTip.SetToolTip(buttonOpenFile_SYP, "Открыть файл\r\nВыберите нужный файл для обработки");
             buttonOpenFile_SYP.UseVisualStyleBackColor = false;
