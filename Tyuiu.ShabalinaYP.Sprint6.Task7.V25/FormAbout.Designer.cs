@@ -29,27 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
-            textBoxAbout_SYP = new TextBox();
             pictureBoxAvatar_SYP = new PictureBox();
             buttonOK_SYP = new Button();
+            labelInfo_SYP = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar_SYP).BeginInit();
             SuspendLayout();
-            // 
-            // textBoxAbout_SYP
-            // 
-            textBoxAbout_SYP.BackColor = SystemColors.ButtonFace;
-            textBoxAbout_SYP.BorderStyle = BorderStyle.FixedSingle;
-            textBoxAbout_SYP.Location = new Point(221, 45);
-            textBoxAbout_SYP.Multiline = true;
-            textBoxAbout_SYP.Name = "textBoxAbout_SYP";
-            textBoxAbout_SYP.Size = new Size(300, 193);
-            textBoxAbout_SYP.TabIndex = 5;
-            textBoxAbout_SYP.Text = resources.GetString("textBoxAbout_SYP.Text");
             // 
             // pictureBoxAvatar_SYP
             // 
             pictureBoxAvatar_SYP.Image = (Image)resources.GetObject("pictureBoxAvatar_SYP.Image");
-            pictureBoxAvatar_SYP.Location = new Point(12, 12);
+            pictureBoxAvatar_SYP.Location = new Point(33, 33);
             pictureBoxAvatar_SYP.Name = "pictureBoxAvatar_SYP";
             pictureBoxAvatar_SYP.Size = new Size(178, 253);
             pictureBoxAvatar_SYP.TabIndex = 4;
@@ -64,26 +53,36 @@
             buttonOK_SYP.TabIndex = 3;
             buttonOK_SYP.Text = "Ок";
             buttonOK_SYP.UseVisualStyleBackColor = true;
+            buttonOK_SYP.Click += buttonOK_SYP_Click;
+            // 
+            // labelInfo_SYP
+            // 
+            labelInfo_SYP.AutoSize = true;
+            labelInfo_SYP.Location = new Point(239, 72);
+            labelInfo_SYP.Name = "labelInfo_SYP";
+            labelInfo_SYP.Size = new Size(303, 135);
+            labelInfo_SYP.TabIndex = 5;
+            labelInfo_SYP.Text = resources.GetString("labelInfo_SYP.Text");
             // 
             // FormAbout
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(601, 314);
-            Controls.Add(textBoxAbout_SYP);
+            Controls.Add(labelInfo_SYP);
             Controls.Add(pictureBoxAvatar_SYP);
             Controls.Add(buttonOK_SYP);
             Name = "FormAbout";
-            Text = "FormAbout";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "О программе";
             ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar_SYP).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox textBoxAbout_SYP;
         private PictureBox pictureBoxAvatar_SYP;
         private Button buttonOK_SYP;
+        private Label labelInfo_SYP;
     }
 }

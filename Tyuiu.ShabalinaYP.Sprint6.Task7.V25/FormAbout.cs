@@ -16,5 +16,10 @@ namespace Tyuiu.ShabalinaYP.Sprint6.Task7.V25
         {
             InitializeComponent();
         }
+
+        private void buttonOK_SYP_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

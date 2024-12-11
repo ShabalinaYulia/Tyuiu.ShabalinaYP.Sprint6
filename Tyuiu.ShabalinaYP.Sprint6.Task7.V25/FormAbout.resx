@@ -117,21 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBoxAbout_SYP.Text" xml:space="preserve">
-    <value>Разработчик: Шабалина Ю. П.
-Группа: ПКТб-24-1
-Программа разработана в рамках изучения языка C#
-
-Тюменский индустриальный университет (c) 2024
-Высшая школа цифровых технологий (c) 2024
-
-Внутренне имя: Tyuiu.ShabalinaYP.Sprint6.Task6.V24</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBoxAvatar_SYP.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALQAAAEBCAIAAABe3xgXAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF5MvQVYm/ca98+quEOQEAjB4hCBBOLuriS4u7u7u5TS0lJ399XXrVvn
+        DgAACw4BQL7hQQAA/7JJREFUeF5MvQVYm/ca98+quEOQEAjB4hCBBOLuriS4u7u7u5TS0lJ399XXrVvn
         vjM9Z76d2Zn7+t4p7/+9/rvu67mepCGE/D7PV5InmVsKBcfhpqWmkgIDPZHhwXQKEZ8QC5NlNtCJuK1u
         bmhkmEzIlos4WpVYoxTY9HKdnJtpkhVmG7JtCph8hz7bqqaTkny2uXlscvP3eIyYgDJpBHolVylmZuqk
         uWZtgc0kYzPTyfhYRJD/1sdCPLeF+XggA3zouDgVP0PCTCm268ucxiKHPtdptJlVBQX2urqSioo8s1nJ
@@ -2212,6 +2202,18 @@
         7W693tv+/rtHGOQ//3yMAfjq688ODolbMW0f7Gwf7u8eHuwR9uI18EEoyvE//CE5j47pkyd/QoKXFueP
         n4vQPTw41NoiGhkaBTeALWGVe/sG0BvFpSXQWRj5lZUlQB+5LC0tLS8vD9EP6RRjjQJGJhgZHYiPi5qc
         AMy6XakOUZFhDfVV6WlJ6Af0dlR0GPT9+ubK/w//QSuKUtJGeQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="labelInfo_SYP.Text" xml:space="preserve">
+    <value>Разработчик: Шабалина Ю. П.
+Группа: ПКТб-24-1
+Программа разработана в рамках изучения языка C#
+
+Тюменский индустриальный университет (c) 2024
+Высшая школа цифровых технологий (c) 2024
+
+Внутренне имя: Tyuiu.ShabalinaYP.Sprint6.Task7.V25
+
 </value>
   </data>
 </root>
