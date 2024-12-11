@@ -17,7 +17,7 @@ namespace Tyuiu.ShabalinaYP.Sprint6.Task7.V25.Lib
                     matrix[i, j] = Convert.ToInt32(line[j]);
                 }
             }
-            for (int i = 0; i < columns; i++)
+            for (int i = 0; i < rows; i++)
             {
                 if (matrix[i, 6] % 5 == 0)
                 {
